@@ -32,18 +32,6 @@
 
     <body>
 
-        <!-- Header -->
-        <!-- <div class="container">
-            <div class="header row">
-                <div class="logo span4">
-                    <h1><a href="">Alissa</a> <span>.</span></h1>
-                </div>
-                <div class="call-us span8">
-                    <p>Tel: <span>0039 123 45 789</span> | Skype: <span>info@domain.it</span></p>
-                </div>
-            </div>
-        </div> -->
-
         <!-- Coming Soon -->
         <div class="coming-soon">
             <div class="inner-bg">
@@ -75,18 +63,22 @@
 
         <!-- Content -->
         <div class="container">
+
             <div class="row">
                 <div class="span12 subscribe">
                     <h3>Iscriviti alla nostra newsletter</h3>
                     <p>Inviaci la tua email e sarai trai primi a gustarti il sito quando sarà pronto:</p>
+
                     <form class="form-inline" action="assets/sendmail.php" method="post">
                         <input type="text" name="email" placeholder="Inserisci la tua email...">
                         <button type="submit" class="btn">Iscrivimi!</button>
                     </form>
+
                     <div class="success-message"></div>
                     <div class="error-message"></div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="span12 social">
                     <a href="" class="facebook" rel="tooltip" data-placement="top" data-original-title="Facebook"></a>
@@ -96,10 +88,22 @@
                     <a href="" class="pinterest" rel="tooltip" data-placement="top" data-original-title="Pinterest"></a>
                 </div>
             </div>
+            
         </div>
+
+        <p><a href="#" class="modal" data-manifesto="manifesto.html">Read it!</a></p>
 
         <!-- Javascript -->
         <script src="assets/js/jquery-1.8.2.min.js"></script>
+        <script src="assets/js/jquery.modal.js"></script>
+        <script>
+        $('.modal').modal({
+            'modal': 'modal-window',
+            'close': 'modal-close',
+            'closeText': 'Close',
+            'shade': 'modal-shade'
+        });
+        </script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/jquery.countdown.js"></script>
