@@ -3,26 +3,26 @@
 */
 (function($){
 
-$.fn.modal = function(opt){
+$.fn.modale = function(opt){
     var settings;
-    var createModal, closeModal;
+    var createModale, closeModale;
     var body = $('body');
 
     settings = $.extend({
-        'modal': 'jquery-modal',
-        'close': 'jquery-modal-close',
+        'modale': 'jquery-modale',
+        'close': 'jquery-modale-close',
         'closeText': '',
-        'shade': 'jquery-modal-shade'
+        'shade': 'jquery-modale-shade'
     }, opt);
 
-    createModal = function(data){
-        var shade, close, modal;
+    createModale = function(data){
+        var shade, close, modale;
 
         shade = $('<div />', {
             class: settings.shade
         }).on('click', function(){
 
-            closeModal(modal, shade);
+            closeModale(modale, shade);
 
         });
 
@@ -32,23 +32,23 @@ $.fn.modal = function(opt){
             href: '#'
         }).on('click', function(){
 
-            closeModal(modal, shade);
+            closeModale(modale, shade);
 
         })
 
-        modal = $('<div />', {
+        modale = $('<div />', {
             html: data,
-            class: settings.modal
+            class: settings.modale
         }).append(close);
 
-        body.prepend(shade, modal);
+        body.prepend(shade, modale);
 
     };
 
-    closeModal = function(modal, shade){
+    closeModale = function(modale, shade){
 
         shade.remove();
-        modal.remove();
+        modale.remove();
 
     };
 
@@ -63,11 +63,11 @@ $.fn.modal = function(opt){
 
         }).done(function(data){
 
-            createModal(data);
+            createModale(data);
 
         }).error(function(){
 
-            createModal('Oopss');
+            createModale('Oopss');
 
         });
 

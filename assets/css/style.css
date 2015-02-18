@@ -208,7 +208,7 @@ a:hover { text-decoration: none; }
 .social a.googleplus:hover { background: url(../img/social-icons/_googleplus.png); }
 .social a.pinterest:hover { background: url(../img/social-icons/_pinterest.png); }
 
-.modal-window{
+.modale-window{
     position:absolute;
     left:50%;
     top:50px;
@@ -221,7 +221,7 @@ a:hover { text-decoration: none; }
     transform: translate(-50%, 0);
 }
 
-.modal-close{
+.modale-close{
     font-size:12px;
     position:absolute;
     top:10px;
@@ -229,7 +229,7 @@ a:hover { text-decoration: none; }
     z-index: 0;
 }
 
-.modal-shade{
+.modale-shade{
     position:fixed;
     height:100%;
     width:100%;
