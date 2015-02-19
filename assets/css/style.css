@@ -16,7 +16,7 @@ a:hover { text-decoration: none; }
 
 /***** Coming Soon *****/
 
-.coming-soon {
+.coming {
     margin: 0 auto;
     text-align: center;
     color: #fff;
@@ -24,27 +24,55 @@ a:hover { text-decoration: none; }
 }
 
 .inner-bg {
-    padding: 50px 0 60px 0;
+    padding: 100px 0 60px 0;
     background: url(../img/pattern-3.png);
     -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
     -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
 }
 
-.coming-soon h2 {
-	padding-top: 20px;
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
+.coming h2 {
+	padding: 30px 0px 30px 0px;
+	font-family: Clicker Script;
+    font-size: 120px;
+    font-weight: 200;
+    /* text-transform: uppercase; */
     text-shadow: 0 1px 7px rgba(0,0,0,.2);
 }
 
-.coming-soon p {
+.coming p {
     margin-top: 20px;
-    font-size: 21px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 42px;
     text-shadow: 0 1px 7px rgba(0,0,0,.2);
 }
+
+#cool {
+	font-size: 18px;
+}
+
+#cool a{
+	color: #fff;
+}
+
+#cool a:hover {
+	color: #fbb03b;
+}
+
+/* .coming q {
+	font-style: italic;
+    font-size: 24px;
+}
+
+.coming a {
+	color: #fff;
+	font-size: 18px;
+}
+
+.coming a:hover {
+	color: #fbb03b;
+	font-size: 18px;
+} */
 
 .timer {
     margin-top: 40px;
@@ -209,6 +237,7 @@ a:hover { text-decoration: none; }
 .social a.pinterest:hover { background: url(../img/social-icons/_pinterest.png); }
 
 .modale-window{
+	z-index:2;
     position:absolute;
     left:50%;
     top:50px;
@@ -230,6 +259,7 @@ a:hover { text-decoration: none; }
 }
 
 .modale-shade{
+	z-index:1;
     position:fixed;
     height:100%;
     width:100%;
@@ -275,12 +305,12 @@ a:hover { text-decoration: none; }
         padding: 45px 0 50px 0;
     }
 
-    .coming-soon h2 {
+    .coming h2 {
         font-size: 36px;
         padding: 0 20px;
     }
 
-    .coming-soon p {
+    .coming p {
         padding: 0 20px;
     }
 

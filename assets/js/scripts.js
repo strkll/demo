@@ -1,10 +1,9 @@
-
 jQuery(document).ready(function() {
 
     /*
         Background slideshow
     */
-    $('.coming-soon').backstretch([
+    $('.coming').backstretch([
       "assets/img/backgrounds/1.jpg"
     , "assets/img/backgrounds/2.jpg"
     , "assets/img/backgrounds/4.jpg"
