@@ -10,8 +10,8 @@ body {
 strong { font-weight: 700; }
 a:hover { text-decoration: none; }
 
-::-moz-selection { background: #e75967; color: #fff; text-shadow: none; }
-::selection { background: #e75967; color: #fff; text-shadow: none; }
+::-moz-selection { background: #FFB84D; color: #fff; text-shadow: none; }
+::selection { background: #FFB84D; color: #fff; text-shadow: none; }
 
 
 /***** Coming Soon *****/
